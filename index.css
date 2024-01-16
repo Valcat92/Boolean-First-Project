@@ -1,0 +1,114 @@
+
+* {
+  box-sizing: border-box; /* tutto il contenuto deve stare all'interno dei bordi*/
+  font-weight: normal;
+}
+
+
+body{
+  background-image: url("background.jpg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+#main-content {
+  width: 55vw;
+  height: 76vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 2%;
+  padding: 7vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/********************* BARRA DEL TITOLO & LOGO ***************************/
+
+#title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#title img {
+  width: 25%;
+  margin: 10px auto; 
+  display: block; /* Trasformo l'immagine in un block-line */
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1{
+  text-align: center;
+  color: rgb(9, 255, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px 10px 3px 10px;
+}
+
+.prenotazioni {
+  background-color: rgb(9, 255, 0);
+  height: 5vh;
+  width: 100%;
+  padding: 0.3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prenotazioni a {
+  margin: 0 5px;
+}
+
+/*************************** LISTA MONOPATTINI DISPONIBILI ********************************/
+
+ul {
+  list-style: none; /* Rimuovo i puntini*/
+  padding: 0;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+ul li {
+  margin: 20px 0;
+}
+
+.checkbox {
+  font-weight: bold;
+}
+
+.info h2 {
+  font-size: 15px;
+  margin: 3px
+}
+
+.charge_bar {
+    height: 3vh;
+    border-radius: 10px;
+}
+
+.charge_bar_1 {
+  background-color: rgb(219, 181, 75);
+  width: 33%;
+}
+
+.charge_bar_2 {
+  background-color: rgb(75, 219, 75);
+  width:66%;
+}
+
+.charge_bar_3 {
+  background-color: rgb(219, 75, 75);
+  width: 10%;
+}
